@@ -14,11 +14,11 @@ While resnets' layers are connected by adding the values of previous layer and t
 
 Here is a quick descritpion about the arguments of the **densenet_model** function.
 
-<li>
-    <ul> input_shape : The shape of **an** individual in the dataset. It should be a 3-length tuple *(height, width, channels)* or *(channels, height, width)*</ul>
-    <ul> nb_of_classes : The possible number of outputs/classes/target. It should be an integer.</ul>
-    <ul> nb_dense_block : The number of dense block inside the neural network. It should be an integer.</ul>
-    <ul> dropout_rate : The rate of neurons inhibited by Dropout layers. It should be a float between 0.0 and 1.0.</ul>
-    <ul> nb_filters_list : The number of filters used for each dense block. It should be an iterable of int and this interable's size must equal with nb_dense_block value.</ul>
-</li>
+<ul>
+    <li> input_shape : The shape of **an** individual in the dataset. It should be a 3-length tuple *(height, width, channels)* or *(channels, height, width)*</li>
+    <li> nb_of_classes : The possible number of outputs/classes/target. It should be an integer.</li>
+    <li> nb_dense_block : The number of dense block inside the neural network. It should be an integer.</li>
+    <li> dropout_rate : The rate of neurons inhibited by Dropout layers. It should be a float between 0.0 and 1.0.</li>
+    <li> nb_filters_list : The number of filters used for each dense block. It should be an iterable of int and this interable's size must equal with nb_dense_block value.</li>
+</ul>
 

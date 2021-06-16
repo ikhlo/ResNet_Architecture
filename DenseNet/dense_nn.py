@@ -22,7 +22,8 @@ def dense_bottleneck_layer(x, nb_channels, dropout_rate):
 
 def dense_block(x, nb_channels, dropout_rate, nb_bottleneck_layer=5):
 
-  all_layers = [x]
+  all_layers = list()
+  all_layers.append(x)
 
   for i in range(nb_bottleneck_layer):
     x = dense_bottleneck_layer(x, nb_channels, dropout_rate)

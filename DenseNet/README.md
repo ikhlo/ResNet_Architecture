@@ -1,6 +1,6 @@
 # Dense Neural Network
 
-Here is the research paper explaining dense neural network and from which this code has been implemented : [Densely Connected Convolutional Networks](https://arxiv.org/pdf/1608.06993.pdf)
+Here is the research paper explaining dense neural network and from which this code has been implemented : <a href="https://arxiv.org/pdf/1608.06993.pdf" target="_blank">Densely Connected Convolutional Networks</a>
 
 Dense Neural Network are a variant of Residual Neural Network with a simple idea : as add shortcut between layer seems to perform well, we just have to connect each layer with all the previous ones. Those connections between layers, called **bottleneck layer**, are made through what we call a **dense block** which are themselves connected by **transition layers** inside the network. 
 

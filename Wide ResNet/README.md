@@ -1,6 +1,6 @@
 # Wide Residual Neural Network
 
-Here is the research paper explaining dense neural network and from which this code has been implemented : [Wide Residual Networks](https://arxiv.org/pdf/1605.07146v4.pdf)
+Here is the research paper explaining dense neural network and from which this code has been implemented : <a href="https://arxiv.org/pdf/1605.07146v4.pdf" target="_blank">Wide Residual Networks</a>
 
 Wide Residual Network is one of the first residual networks variant. It keeps the same idea, working with skip connections, however instead of increasing the deepness of the model, wide residual networks increase the network's width. So here we are not going to use a lot of layers, compare to resnet, but they become wider as we uses more filters. The advantage is that a wide network training is faster than a deep network because GPU is more efficient working in parallel computations with wider layers. An other advantage is the using of drop out method which reduce performance for basic resnet but not for wide resnet.
 

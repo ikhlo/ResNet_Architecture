@@ -1,6 +1,6 @@
 # Residual Neural Network
 
-Here is the research paper explaining dense neural network and from which this code has been implemented : [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf)
+Here is the research paper explaining dense neural network and from which this code has been implemented : <a href="https://arxiv.org/pdf/1512.03385.pdf" target="_blank">Deep Residual Learning for Image Recognition</a>
 
 Residual Neural Network apparition was an unexpected breakthrough into AI domain, especially image recognition : it solves a known bottleneck in deep learning which is degradation problem. As neural networks became deeper and deeper with time, we figured out that at a specific moment, the accuracy get saturated and finally drop. To fix it, some researchers find a solution by adding skip connections which link shallow layers to deeper ones. The simple idea behind this is the following : as we give a correct previous state to the network, even with more training time and if it becomes deeper, the accuracy should not be worse than during previous steps.
 

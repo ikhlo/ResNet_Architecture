@@ -20,5 +20,5 @@ Here is a quick descritpion about the arguments of the **densenet_model** functi
     <ul> nb_dense_block : The number of dense block inside the neural network. It should be an integer.</ul>
     <ul> dropout_rate : The rate of neurons inhibited by Dropout layers. It should be a float between 0.0 and 1.0.</ul>
     <ul> nb_filters_list : The number of filters used for each dense block. It should be an iterable of int and this interable's size must equal with nb_dense_block value.</ul>
-<li>
+</li>
 

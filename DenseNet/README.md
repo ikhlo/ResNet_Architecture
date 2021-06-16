@@ -9,3 +9,16 @@ Dense Neural Network are a variant of Residual Neural Network with a simple idea
 <br>
 
 While resnets' layers are connected by adding the values of previous layer and the current one (so two inputs layer with shape (n, n, k) are added to give a final layer with output shape (n, n, k) with *n -> height, width and k -> depth*), inside **dense block** the layers are concatenated : two input layers with shape (n, n, k1) and (n, n, k2) are concatenated to give a final layer with output shape (n, n, k1+k2).
+
+## DenseNet Model
+
+Here is a quick descritpion about the arguments of the **densenet_model** function.
+
+<li>
+    <ul> input_shape : The shape of **an** individual in the dataset. It should be a 3-length tuple *(height, width, channels)* or *(channels, height, width)*</ul>
+    <ul> nb_of_classes : The possible number of outputs/classes/target. It should be an integer.</ul>
+    <ul> nb_dense_block : The number of dense block inside the neural network. It should be an integer.</ul>
+    <ul> dropout_rate : The rate of neurons inhibited by Dropout layers. It should be a float between 0.0 and 1.0.</ul>
+    <ul> nb_filters_list : The number of filters used for each dense block. It should be an iterable of int and this interable's size must equal with nb_dense_block value.</ul>
+<li>
+

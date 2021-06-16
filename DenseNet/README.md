@@ -15,10 +15,10 @@ While resnets' layers are connected by adding the values of previous layer and t
 Here is a quick descritpion about the arguments of the **densenet_model** function.
 
 <ul>
-    <li> input_shape : The shape of <b>an</b> individual in the dataset. It should be a 3-length tuple <i>(height, width, channels)</i> or <i>(channels, height, width)</i></li>
-    <li> nb_of_classes : The possible number of outputs/classes/target. It should be an integer.</li>
-    <li> nb_dense_block : The number of dense block inside the neural network. It should be an integer.</li>
-    <li> dropout_rate : The rate of neurons inhibited by Dropout layers. It should be a float between 0.0 and 1.0.</li>
-    <li> nb_filters_list : The number of filters used for each dense block. It should be an iterable of int and this interable's size must equal with nb_dense_block value.</li>
+    <li> <b>input_shape</b> : The shape of <b>an</b> individual in the dataset. It should be a 3-length tuple <i>(height, width, channels)</i> or <i>(channels, height, width)</i></li>
+    <li> <b>nb_of_classes</b> : The possible number of outputs/classes/target. It should be an integer.</li>
+    <li> <b>nb_dense_block</b> : The number of dense block inside the neural network. It should be an integer.</li>
+    <li> <b>dropout_rate</b> : The rate of neurons inhibited by Dropout layers. It should be a float between 0.0 and 1.0.</li>
+    <li> <b>nb_filters_list</b> : The number of filters used for each dense block. It should be an iterable of int and this interable's size must equal with nb_dense_block value.</li>
 </ul>
 

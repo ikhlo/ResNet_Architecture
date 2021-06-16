@@ -9,7 +9,7 @@ For those who have some knowledge and technical skills, you can use it as a star
 Here are the different neural networks implemented in this repository.
 
 <ul>
-    <li><a href="https://arxiv.org/pdf/1512.03385.pdf">(Basic) Residual Neural Network - ResNet</a></li>
-    <li><a href="https://arxiv.org/pdf/1605.07146.pdf">Wide Residual Neural Network - WideResNet</a></li>
-    <li><a href="https://arxiv.org/pdf/1608.06993.pdf">Dense Neural Network - DenseNet</a></li>
+    <li><a href="https://github.com/ikhlo/ResNet_Architecture/tree/main/ResNet">(Basic) Residual Neural Network - ResNet</a>
+    <li><a href="https://github.com/ikhlo/ResNet_Architecture/tree/main/Wide%20ResNet">Wide Residual Neural Network - WideResNet</a></li>
+    <li><a href="https://github.com/ikhlo/ResNet_Architecture/tree/main/DenseNet">Dense Neural Network - DenseNet</a></li>
 </ul>

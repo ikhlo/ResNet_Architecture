@@ -40,12 +40,12 @@ def wide_res_conv_block(x, base, k, s):
   return x
 
 
-def wide_resnet_model(input:np.ndarray, nb_of_classes: int, depth:int=16, k:int=8, dropout_rate:float=0.0):
+def wide_resnet_model(input_shape:tuple, nb_of_classes:int, depth:int=16, k:int=8, dropout_rate:float=0.0):
 
   N = int((depth - 4) / 6)
   filters = (16, 32, 64)
 
-  model_input = Input(shape=input.shape)
+  model_input = Input(shape=input_shape)
   x = Conv2D(16, kernel_size=3, padding="same", kernel_initializer='he_normal', use_bias=False)(model_input)
   x = BatchNormalization(axis=CHANNEL_AXIS)(x)
   x = Activation('relu')(x)

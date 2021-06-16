@@ -1,5 +1,7 @@
 # Dense Neural Network
 
+Here is the research paper explaining dense neural network and from which this code has been implemented : [Densely Connected Convolutional Networks](https://arxiv.org/pdf/1608.06993.pdf)
+
 Dense Neural Network are a variant of Residual Neural Network with a simple idea : as add shortcut between layer seems to perform well, we just have to connect each layer with all the previous ones. Those connections between layers, called **bottleneck layer**, are made through what we call a **dense block** which are themselves connected by **transition layers** inside the network. 
 
 <br>
@@ -19,6 +21,5 @@ Here is a quick descritpion about the arguments of the **densenet_model** functi
     <li> <b>nb_of_classes</b> : The possible number of outputs/classes/target. It should be an integer.</li>
     <li> <b>nb_dense_block</b> : The number of dense block inside the neural network. It should be an integer.</li>
     <li> <b>dropout_rate</b> : The rate of neurons inhibited by Dropout layers. It should be a float between 0.0 and 1.0.</li>
-    <li> <b>nb_filters_list</b> : The number of filters used for each dense block. It should be an iterable of int and this interable's size must equal with nb_dense_block value.</li>
+    <li> <b>nb_filters_list</b> : The number of filters used for each dense block. It should be an iterable of integer and this interable's size must equal with nb_dense_block value.</li>
 </ul>
-

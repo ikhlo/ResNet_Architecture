@@ -52,9 +52,9 @@ def res_conv_block(x, no_filters_list, n_strides):
   return x
 
 
-def resnet_model(input: np.ndarray, nb_of_classes: int):
+def resnet_model(input_shape:tuple, nb_of_classes:int):
 
-  model_input = Input(shape=input.shape)
+  model_input = Input(shape=input_shape)
   x = ZeroPadding2D(padding=(3, 3))(model_input)
 
   x = Conv2D(64, kernel_size=(7, 7), strides=(2, 2), kernel_initializer='he_normal', use_bias=False)(x)

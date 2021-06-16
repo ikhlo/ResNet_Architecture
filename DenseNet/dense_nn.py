@@ -44,11 +44,11 @@ def dense_transition_layer(x, nb_channels, dropout_rate):
   return x
 
 
-def densenet_model(input:np.ndarray, nb_of_classes: int, nb_dense_block:int=4, dropout_rate:float=0.2, nb_filters_list:list=[6, 12, 24, 16]):
+def densenet_model(input_shape:tuple, nb_of_classes:int, nb_dense_block:int=4, dropout_rate:float=0.2, nb_filters_list:list=[6, 12, 24, 16]):
 
 
-  model_input = Input(shape=input.shape)
-  nb_channel = input.shape[CHANNEL_AXIS]
+  model_input = Input(shape=input_shape)
+  nb_channel = model_input.shape[CHANNEL_AXIS]
 
 
   x = Conv2D(2 * nb_channel, kernel_size=(3,3), padding="same", kernel_initializer='he_normal', use_bias=False)(model_input)
